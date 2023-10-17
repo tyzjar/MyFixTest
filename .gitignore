@@ -1,0 +1,5 @@
+.vscode/
+3rdParty/
+build/
+bin/*
+!bin/server.cfg
