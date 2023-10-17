@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(MyQuickFIXApp)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
+add_executable(MyQuickFIXApp ${CMAKE_SOURCE_DIR}/src/main.cpp)
+target_link_libraries(MyQuickFIXApp quickfix)
+target_link_libraries(MyQuickFIXApp pthread xml2 z)
