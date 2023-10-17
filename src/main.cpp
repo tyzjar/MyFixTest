@@ -26,6 +26,7 @@ public:
     void StartWait()
     {
         std::unique_lock<std::mutex> lock_(mutex);
+        m_routeState = false;
         m_waiter.wait(lock_, [this](){ return m_routeState; } );
     }
 
